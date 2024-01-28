@@ -1,0 +1,43 @@
+@import '../../assets/css/variables.css';
+
+.wrapper {
+  background: var(--color-primary);
+  color: #f9f9f9;
+  margin-bottom: 0;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    background: linear-gradient(
+      179deg,
+      var(--color-primary) 0,
+      var(--color-primary) 49%,
+      rgba(255, 255, 255, 0) 51%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    bottom: -32px;
+    content: '';
+    display: block;
+    height: 32px;
+    left: 0;
+    /* does not work in edge: */
+    /* background: linear-gradient(
+            179deg,
+            var(--color-primary) 0,
+            var(--color-primary) 49%,
+            #ffffff00 51%,
+            #ffffff00 100%
+        ); */
+    position: absolute;
+    right: 0;
+  }
+}
+
+/* This is a hack that is required because Save to PDF in Chrome blurs out CSS gradients */
+@media print {
+  .wrapper:after {
+    background: url(./img/faux-bg.svg) no-repeat top left;
+    background-size: cover;
+  }
+}

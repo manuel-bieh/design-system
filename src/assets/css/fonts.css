@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Classic Round';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/ClassicRound-Regular-webfont.woff2') format('woff2'),
+    url('../fonts/ClassicRound-Regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Classic Round';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    url('../fonts/ClassicRound-It-webfont.woff2') format('woff2'),
+    url('../fonts/ClassicRound-It-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Classic Round';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../fonts/ClassicRound-Medium-webfont.woff2') format('woff2'),
+    url('../fonts/ClassicRound-Medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Classic Round';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('../fonts/ClassicRound-Bold-webfont.woff2') format('woff2'),
+    url('../fonts/ClassicRound-Bold-webfont.woff') format('woff');
+}
