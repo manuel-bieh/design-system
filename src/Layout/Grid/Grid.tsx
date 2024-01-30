@@ -16,7 +16,7 @@ type Props = {
     textAlign?: 'left' | 'right' | 'center';
 };
 
-const Grid = ({
+export const Grid = ({
     // align,
     centered,
     children,
@@ -46,5 +46,3 @@ const Grid = ({
         {children}
     </Element>
 );
-
-export default Grid;

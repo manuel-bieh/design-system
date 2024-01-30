@@ -5,8 +5,4 @@ type PropsT = {
     children: any;
 };
 
-const Footer = ({ children }: PropsT) => {
-    return <footer className={css.wrapper}>{children}</footer>;
-};
-
-export default Footer;
+export const Footer = ({ children }: PropsT) => <footer className={css.wrapper}>{children}</footer>;

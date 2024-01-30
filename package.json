@@ -30,9 +30,9 @@
   },
   "types": "./dist/index.d.ts",
   "exports": {
+    "./dist/index.css": "./dist/index.css",
     "./dist/*": "./dist/*",
     ".": {
-      "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     }
   },

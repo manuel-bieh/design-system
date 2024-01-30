@@ -1,3 +1,2 @@
-export { default as Grid } from './Grid';
-export { default as Column } from './Column';
-export { default as Col } from './Column';
+export * from './Grid';
+export * from './Column';

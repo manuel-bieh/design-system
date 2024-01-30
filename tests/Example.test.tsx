@@ -1,11 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { expect, it } from 'vitest';
-import { Example } from '../src';
+import { Header } from '../src';
 
 it('renders correctly', () => {
-  const tree = renderer
-    .create(<Example text="Clicked this many times" />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+    const tree = renderer.create(<Header>Test</Header>).toJSON();
+    expect(tree).toMatchSnapshot();
 });

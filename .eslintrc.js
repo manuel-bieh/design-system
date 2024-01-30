@@ -17,12 +17,13 @@ module.exports = {
         'react',
         '@typescript-eslint',
         'typescript-sort-keys',
-        'unused-imports',
+        // 'unused-imports',
         'prettier',
         'prefer-arrow',
         'sort-class-members',
     ],
     rules: {
+        'arrow-body-style': 'off',
         '@typescript-eslint/no-unused-vars': 'error',
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
@@ -41,15 +42,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'typescript-sort-keys/interface': 'error',
         'typescript-sort-keys/string-enum': 'error',
-        'unused-imports/no-unused-imports': 'error',
-        'prefer-arrow/prefer-arrow-functions': [
-            'error',
-            {
-                disallowPrototype: true,
-                singleReturnOnly: true,
-                classPropertiesAllowed: false,
-            },
-        ],
+        // // 'unused-imports/no-unused-imports': 'error',
         'sort-class-members/sort-class-members': [
             'error',
             {
@@ -65,7 +58,7 @@ module.exports = {
                 accessorPairPositioning: 'getThenSet',
             },
         ],
-        'import/no-dynamic-require': 'off',
+        // 'import/no-dynamic-require': 'off',
         'global-require': 'off',
     },
 };

@@ -7,35 +7,35 @@ import { Grid, Column } from '.';
 import css from './Grid.module.css';
 
 export default {
-  title: 'Layout/Grid',
-  component: Grid,
-  argTypes: {},
+    title: 'Layout/Grid',
+    component: Grid,
+    argTypes: {},
 } as Meta<typeof Grid>;
 
 // const Template: StoryFn<typeof Grid> = () => <Grid />;
 
 // export const Primary = Template.bind({});
 export const Primary = () => (
-  <Grid className={css.debug} textAlign="right" seamless>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      1
-    </Column>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      2
-    </Column>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      3
-    </Column>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      4
-    </Column>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      5
-    </Column>
-    <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
-      6
-    </Column>
-  </Grid>
+    <Grid className={css.debug} textAlign="right" seamless>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            1
+        </Column>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            2
+        </Column>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            3
+        </Column>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            4
+        </Column>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            5
+        </Column>
+        <Column xs={12} sm={6} md={4} lg={3} xl={2} className={css.debug}>
+            6
+        </Column>
+    </Grid>
 );
 
 // import { Grid, Column } from '.';

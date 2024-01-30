@@ -10,7 +10,7 @@ type PropsT = {
     data: DataTableItem[];
 };
 
-const DataTable = ({ className, columnClassNames = [], data }: PropsT) => (
+export const DataTable = ({ className, columnClassNames = [], data }: PropsT) => (
     <table className={classNames(css.wrapper, className)}>
         <tbody>
             {data.map((row, i) => (
@@ -23,5 +23,3 @@ const DataTable = ({ className, columnClassNames = [], data }: PropsT) => (
         </tbody>
     </table>
 );
-
-export default DataTable;

@@ -1,10 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react';
-import Footer from '.';
+import { Footer } from '.';
 
 export default {
-  title: 'Layout/Footer',
-  component: Footer,
-  argTypes: {},
+    title: 'Layout/Footer',
+    component: Footer,
+    argTypes: {},
 } as Meta<typeof Footer>;
 
 const Template: StoryFn<typeof Footer> = (args) => <Footer {...args}>Content</Footer>;
