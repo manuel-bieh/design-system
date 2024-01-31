@@ -2,6 +2,7 @@
   "name": "@manuel-bieh/design-system",
   "description": "My personal little design system",
   "version": "0.0.3",
+  "private": false,
   "author": "Manuel Bieh",
   "license": "MIT",
   "keywords": [],
