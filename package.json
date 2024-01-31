@@ -3,6 +3,9 @@
   "description": "My personal little design system",
   "version": "0.0.4",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Manuel Bieh",
   "license": "MIT",
   "keywords": [],
