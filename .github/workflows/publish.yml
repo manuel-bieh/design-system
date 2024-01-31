@@ -28,6 +28,9 @@ jobs:
               with:
                   node-version: lts/*
                   cache: 'yarn'
+                  registry-url: 'https://registry.npmjs.org'
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
             - name: Deploy Storybook
               uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
