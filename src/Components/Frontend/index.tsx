@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const Frontend = () => {
     const [counter, setCounter] = useState(0);
 
-    useEffect(() => {
-        console.log('Frontend Test Component loaded');
-    }, []);
+    // useEffect(() => {
+    //     console.log('Frontend Test Component loaded');
+    // }, []);
 
     return (
         <div style={{ padding: 16 }}>

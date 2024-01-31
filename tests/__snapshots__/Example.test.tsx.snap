@@ -1,11 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`renders correctly 1`] = `
-<button
-  id="example-button"
-  onClick={[Function]}
-  type="button"
+<header
+  className="_wrapper_f67eb6"
 >
-  Clicked this many times 0
-</button>
+  Test
+</header>
 `;
