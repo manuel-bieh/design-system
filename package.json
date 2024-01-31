@@ -13,7 +13,8 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsup --onSuccess \"yarn link:self\"",
+    "build0": "tsup --onSuccess \"yarn link:self\"",
+    "build": "tsup",
     "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test\" ",
     "link:self": "yarn yalc publish && yarn link",
     "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx)\"",

@@ -1,5 +1,6 @@
 // import { useMemo } from 'react';
 import classNames from 'classnames';
+import { useMemo } from 'react';
 import css from './Grid.module.css';
 
 type Props = {
@@ -32,23 +33,16 @@ export const Column = ({
 }: Props) => {
     const { xs = 12, sm, md, lg, xl } = props;
 
-    // const sizeClass = useMemo(
-    //     () => ({
-    //         [css[`col-xs${xs}` as 'col-$(size)']]: xs,
-    //         [css[`col-sm${sm}` as 'col-$(size)']]: sm,
-    //         [css[`col-md${md}` as 'col-$(size)']]: md,
-    //         [css[`col-lg${lg}` as 'col-$(size)']]: lg,
-    //         [css[`col-xl${xl}` as 'col-$(size)']]: xl,
-    //     }),
-    //     [lg, md, sm, xl, xs]
-    // );
-    const sizeClass = () => ({
-        [css[`col-xs${xs}` as 'col-$(size)']]: xs,
-        [css[`col-sm${sm}` as 'col-$(size)']]: sm,
-        [css[`col-md${md}` as 'col-$(size)']]: md,
-        [css[`col-lg${lg}` as 'col-$(size)']]: lg,
-        [css[`col-xl${xl}` as 'col-$(size)']]: xl,
-    });
+    const sizeClass = useMemo(
+        () => ({
+            [css[`col-xs${xs}` as 'col-$(size)']]: xs,
+            [css[`col-sm${sm}` as 'col-$(size)']]: sm,
+            [css[`col-md${md}` as 'col-$(size)']]: md,
+            [css[`col-lg${lg}` as 'col-$(size)']]: lg,
+            [css[`col-xl${xl}` as 'col-$(size)']]: xl,
+        }),
+        [lg, md, sm, xl, xs]
+    );
 
     return (
         <Element

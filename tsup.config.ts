@@ -1,3 +1,4 @@
+import fs from 'node:fs/promises';
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
@@ -6,7 +7,6 @@ export default defineConfig({
     entry: ['src/index.ts'],
     external: ['react', 'react-dom'],
     format: ['esm'],
-    injectStyle: false,
     loader: {
         // See: https://github.com/egoist/tsup/issues/536#issuecomment-1752121594
         '.css': 'local-css',
@@ -17,7 +17,10 @@ export default defineConfig({
     },
     // minify: true,
     minify: true,
+    onSuccess: async () => {
+        await fs.copyFile('./src/assets/css/media.css', './dist/media.css');
+    },
     sourcemap: 'inline',
-    splitting: true,
+    splitting: false,
     treeshake: true,
 });
