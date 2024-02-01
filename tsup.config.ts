@@ -18,7 +18,10 @@ export default defineConfig({
     // minify: true,
     minify: true,
     onSuccess: async () => {
-        await fs.copyFile('./src/assets/css/media.css', './dist/media.css');
+        await Promise.all([
+            fs.copyFile('./src/assets/css/media.css', './dist/media.css'),
+            fs.copyFile('./src/assets/css/variables.css', './dist/variables.css'),
+        ]);
     },
     sourcemap: 'inline',
     splitting: false,
