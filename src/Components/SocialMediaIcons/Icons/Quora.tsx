@@ -5,7 +5,7 @@ import { IconProps } from './types';
 
 const Quora = ({ className, label }: IconProps) => (
     <a href="https://www.quora.com/profile/Manuel-Bieh" className={classNames(className, css.wrapper)}>
-        <img alt="Logo: Quora" src={require('../img/quora.svg')} className={css.icon} />
+        <img alt="Logo: Quora" src={require(`../img/v2/quora.svg`)} className={css.icon} />
         {label && <span>{label}</span>}
     </a>
 );

@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { AngelList, GitHub, Instagram, Linkedin, Quora, Twitter, Xing } from './Icons';
+import { GitHub, Instagram, Linkedin, Quora, Twitter } from './Icons';
 import { SocialMediaIcons } from '.';
 
 export default {
@@ -18,14 +18,14 @@ export const WithLabels = () => (
         <br />
         <Linkedin label="/in/manuelbieh" />
         <br />
-        <Xing />
-        <br />
+        {/* <Xing />
+        <br /> */}
         <Instagram label="@manuelbieh" />
         <br />
         <Quora label="@manuelbieh" />
         <br />
-        <AngelList label="AngelList" />
-        <br />
+        {/* <AngelList label="AngelList" />
+        <br /> */}
     </>
 );
 

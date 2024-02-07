@@ -5,7 +5,7 @@ import { IconProps } from './types';
 
 const Twitter = ({ className, label }: IconProps) => (
     <a href="https://www.twitter.com/manuelbieh" className={classNames(className, css.wrapper)}>
-        <img alt="Logo: Twitter" src={require('../img/twitter.svg')} className={css.icon} />
+        <img alt="Logo: Twitter" src={require(`../img/v2/twitter.svg`)} className={css.icon} />
         {label && <span>{label}</span>}
     </a>
 );

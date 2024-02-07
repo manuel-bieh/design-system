@@ -5,7 +5,7 @@ import { IconProps } from './types';
 
 const Linkedin = ({ className, label }: IconProps) => (
     <a href="https://www.linkedin.com/in/manuelbieh/" className={classNames(className, css.wrapper)}>
-        <img alt="Logo: Linkedin" src={require('../img/linkedin.svg')} className={css.icon} />
+        <img alt="Logo: Linkedin" src={require(`../img/v2/linkedin.svg`)} className={css.icon} />
         {label && <span>{label}</span>}
     </a>
 );
