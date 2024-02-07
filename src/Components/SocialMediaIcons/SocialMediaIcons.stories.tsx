@@ -28,3 +28,5 @@ export const WithLabels = () => (
         <br />
     </>
 );
+
+export const WithHiddenServices = () => <SocialMediaIcons hidden={['quora', 'instagram']} />;

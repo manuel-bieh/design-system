@@ -1,8 +1,10 @@
 import * as React from 'react';
+import classNames from 'classnames';
 import css from './ClientLogos.module.css';
 
 // import BSDex from './img/boerse-stuttgart.svg';
 
+// This was supposed to work but does not longer after switching to esbuild
 // export const ClientLogos = () => (
 //     <section className={css.wrapper}>
 //         {clientLogos.map((client) => (
@@ -11,6 +13,7 @@ import css from './ClientLogos.module.css';
 //     </section>
 // );
 
+// Use this to generate the code below
 // export const ClientLogos = () => (
 //     <section>
 //         {clientLogos.map((client) => (
@@ -23,9 +26,13 @@ import css from './ClientLogos.module.css';
 //     </section>
 // );
 
-export const ClientLogos = () => {
+type Props = {
+    className?: string;
+};
+
+export const ClientLogos = ({ className }: Props) => {
     return (
-        <section className={css.wrapper}>
+        <section className={classNames(css.wrapper, className)}>
             <img alt="Logo: Volksbank" src={require('./img/vr-smart-finanz.svg')} />
             <img alt="Logo: Börse Stuttgart" src={require('./img/boerse-stuttgart.svg')} />
             {/* <img alt="Logo: Börse Stuttgart" src={BSDex} /> */}
