@@ -13,5 +13,9 @@ export * from './Components/ClientLogos';
 export * from './Components/SocialMediaIcons';
 export * from './Components/TechLogos';
 
+// Social Media Icons
+
+export * from './Components/SocialMediaIcons/Icons';
+
 // For Testing Purposes
 // export * from './Components/Frontend';
