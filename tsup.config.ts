@@ -21,6 +21,7 @@ export default defineConfig({
         await Promise.all([
             fs.copyFile('./src/assets/css/media.css', './dist/media.css'),
             fs.copyFile('./src/assets/css/variables.css', './dist/variables.css'),
+            fs.cp('./src/assets/img', './dist/img', { force: true, recursive: true }),
         ]);
     },
     sourcemap: 'inline',
