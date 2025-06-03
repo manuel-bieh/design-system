@@ -14,8 +14,10 @@ export * from './Components/SocialMediaIcons';
 export * from './Components/TechLogos';
 
 // Social Media Icons
-
 export * from './Components/SocialMediaIcons/Icons';
+
+// Utils
+export * from './Components/DataTable/utils';
 
 // For Testing Purposes
 // export * from './Components/Frontend';
