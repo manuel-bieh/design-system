@@ -1,15 +1,16 @@
 import * as React from 'react';
-import { Github, Twitter, Linkedin, Instagram, Quora, StackOverflow } from './Icons';
+import { Github, Twitter, Linkedin, Instagram, Quora, StackOverflow, X } from './Icons';
 
 type Props = {
     className?: string;
-    hidden?: ('github' | 'twitter' | 'xing' | 'linkedin' | 'instagram' | 'quora' | 'stackoverflow')[];
+    hidden?: ('github' | 'twitter' | 'xing' | 'linkedin' | 'instagram' | 'quora' | 'stackoverflow' | 'x')[];
     iconClassName?: string;
 };
 
 export const SocialMediaIcons = ({ className, iconClassName, hidden }: Props) => (
     <section className={className}>
         {(hidden === undefined || hidden.includes('github') === false) && <Github className={iconClassName} />}
+        {(hidden === undefined || hidden.includes('x') === false) && <X className={iconClassName} />}
         {(hidden === undefined || hidden.includes('twitter') === false) && <Twitter className={iconClassName} />}
         {(hidden === undefined || hidden.includes('linkedin') === false) && <Linkedin className={iconClassName} />}
         {/* {(hidden === undefined || hidden.includes('xing') === false) && <Xing className={iconClassName} />} */}

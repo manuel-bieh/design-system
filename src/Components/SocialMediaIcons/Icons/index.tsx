@@ -6,4 +6,5 @@ export { default as Linkedin } from './Linkedin';
 export { default as Quora } from './Quora';
 export { default as Twitter } from './Twitter';
 export { default as StackOverflow } from './StackOverflow';
+export { default as X } from './X';
 // export { default as Xing } from './Xing';

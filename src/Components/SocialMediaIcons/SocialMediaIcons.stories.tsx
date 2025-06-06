@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { GitHub, Instagram, Linkedin, Quora, Twitter } from './Icons';
+import { GitHub, Instagram, Linkedin, Quora, Twitter, X } from './Icons';
 import { SocialMediaIcons } from '.';
 
 export default {
@@ -15,6 +15,8 @@ export const WithLabels = () => (
         <GitHub label="manuelbieh" />
         <br />
         <Twitter label="@manuelbieh" />
+        <br />
+        <X label="@manuelbieh" />
         <br />
         <Linkedin label="/in/manuelbieh" />
         <br />
