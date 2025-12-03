@@ -1,8 +1,23 @@
 export default [
     {
+        name: 'Finstreet',
+        image: 'vr-smart-finanz.svg',
+        url: 'https://www.vr-smart-guide.de/',
+    },
+    {
         name: 'Volksbank',
         image: 'vr-smart-finanz.svg',
         url: 'https://www.vr-smart-guide.de/',
+    },
+    {
+        name: 'Cosuno',
+        image: 'cosuno.svg',
+        url: 'https://www.cosuno.com/',
+    },
+    {
+        name: 'Gymondo',
+        image: 'gymondo.svg',
+        url: 'https://www.gymondo.com/',
     },
     {
         name: 'Börse Stuttgart',

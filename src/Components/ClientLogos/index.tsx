@@ -33,9 +33,13 @@ type Props = {
 export const ClientLogos = ({ className }: Props) => {
     return (
         <section className={classNames(css.wrapper, className)}>
+            <img alt="Logo: Spark" src={require('../../assets/img/clients/spark.svg')} />
+            <img alt="Logo: EK" src={require('../../assets/img/clients/eberlein-kunz.svg')} />
+            <img alt="Logo: Finstreet" src={require('../../assets/img/clients/finstreet.svg')} />
             <img alt="Logo: Volksbank" src={require('../../assets/img/clients/vr-smart-finanz.svg')} />
+            <img alt="Logo: Cosuno" src={require('../../assets/img/clients/cosuno.svg')} />
+            <img alt="Logo: Gymondo" src={require('../../assets/img/clients/gymondo.svg')} />
             <img alt="Logo: Börse Stuttgart" src={require('../../assets/img/clients/boerse-stuttgart.svg')} />
-            {/* <img alt="Logo: Börse Stuttgart" src={BSDex} /> */}
             <img alt="Logo: Porsche" src={require('../../assets/img/clients/porsche.svg')} />
             <img alt="Logo: ProSiebenSat1 Digital" src={require('../../assets/img/clients/pro7sat1digital.svg')} />
             <img alt="Logo: Zalando" src={require('../../assets/img/clients/zalando.svg')} />
